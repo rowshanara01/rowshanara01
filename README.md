@@ -133,8 +133,7 @@ Education : B.Sc / Diploma in CSE / Software Engineering
 <br/>
 
 <div align="center">
-  <h3>📈 Rowshanara Akhter's Contribution Graph</h3>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rowshanara01&theme=react-dark&hide_border=true&area=true" width="100%" alt="Contribution Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rowshanara01&bg_color=181724&color=ff5370&line=a855f7&point=ffffff&area=false&hide_border=true" width="100%" alt="Rowshanara Akhter's Contribution Graph" />
 </div>
 
 ---
@@ -168,3 +167,7 @@ Education : B.Sc / Diploma in CSE / Software Engineering
   <a href="https://persional-website-8fey.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-6366F1?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio" /></a>
   <a href="https://github.com/rowshanara01"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:10b981,100:059669&height=80&section=footer" width="100%" />
+</div>
