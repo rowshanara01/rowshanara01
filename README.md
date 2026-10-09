@@ -25,7 +25,7 @@ Name      : Rowshanara Akhter
 Title     : Software Developer
 Company   : EasilyPro
 Location  : Dhaka, Bangladesh
-Exp       :  Software Developer
+Exp       : Software Developer
 Education : National University
 ```
 
