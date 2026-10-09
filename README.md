@@ -22,11 +22,11 @@
 
 ```text
 Name      : Rowshanara Akhter
-Title     : Frontend Developer & AI Enthusiast
-Company   : Available for Hire / Open to Work
+Title     : Software Developer
+Company   : EasilyPro
 Location  : Dhaka, Bangladesh
-Exp       : Fresher / Junior Developer
-Education : B.Sc / Diploma in CSE / Software Engineering
+Exp       :  Software Developer
+Education : National University
 ```
 
 🎨 Passionate about crafting clean, responsive web applications & integrating Agentic AI workflows
