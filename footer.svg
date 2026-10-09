@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 96" width="900" height="96" role="img" aria-label="Connection keep-alive. Thanks for reading — open an issue or say hello.">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", "Fira Code", "DejaVu Sans Mono", monospace; }
+    .led { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-in-out infinite }
+    @keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: .3 } }
+    @media (prefers-reduced-motion: reduce) { .led { animation: none } }
+  </style>
+  <defs>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0" stop-color="#1f6feb"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#1f6feb"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="898" height="94" rx="12" fill="#0d1117" stroke="#21262d"/>
+  <rect x="1" y="1" width="898" height="3" rx="1.5" fill="url(#edge)"/>
+  <circle class="led" cx="32" cy="36" r="4.5" fill="#3fb950"/>
+  <text class="mono" x="46" y="41" font-size="13.5" fill="#8b949e">connection: <tspan fill="#3fb950">keep-alive</tspan> · 200 OK · inbox open</text>
+  <text class="mono" x="32" y="72" font-size="15" fill="#c9d1d9">Thanks for reading the docs. <tspan fill="#58a6ff">Feel free to connect anytime.</tspan></text>
+  <text class="mono" x="868" y="72" font-size="13" fill="#8b949e" text-anchor="end">persional-website-8fey.vercel.app</text>
+</svg>

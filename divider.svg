@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 12" width="900" height="12" role="presentation">
+  <style>
+    .packet { animation: travel 7s linear infinite }
+    @keyframes travel { from { transform: translateX(-140px) } to { transform: translateX(900px) } }
+    @media (prefers-reduced-motion: reduce) { .packet { display: none } }
+  </style>
+  <defs>
+    <linearGradient id="p" x1="0" x2="1">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#58a6ff" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#a5d6ff"/>
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="6" x2="900" y2="6" stroke="#21262d" stroke-width="1.5"/>
+  <g class="packet">
+    <rect x="0" y="5" width="130" height="2" fill="url(#p)" rx="1"/>
+    <circle cx="130" cy="6" r="2.5" fill="#a5d6ff"/>
+  </g>
+</svg>

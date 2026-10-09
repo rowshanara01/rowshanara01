@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" role="img" aria-label="Terminal session: Rowshanara Akhter, Full-Stack Software Engineer, service running, 2+ years uptime">
+  <title>rowshanara01@production — service status</title>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", "Fira Code", "DejaVu Sans Mono", monospace; }
+    .fg   { fill: #c9d1d9; }
+    .dim  { fill: #8b949e; }
+    .blue { fill: #58a6ff; }
+    .grn  { fill: #3fb950; }
+    .amb  { fill: #e3b341; }
+    .type { clip-path: inset(0 100% 0 0); animation: type .85s steps(36, end) forwards; }
+    .slide { opacity: 0; transform: translateY(6px); animation: slideIn .45s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    .fade { opacity: 0; animation: fadeIn .45s ease-out forwards; }
+    
+    .d0 { animation-delay: .2s }
+    .d1 { animation-delay: 1.1s }
+    .d2 { animation-delay: 1.5s }
+    .d3 { animation-delay: 1.85s }
+    .d4 { animation-delay: 2.3s }
+    .d5 { animation-delay: 3.25s }
+    .d6 { animation-delay: 3.7s }
+    .d7 { animation-delay: 4.15s }
+    .d8 { animation-delay: 4.6s }
+    .d9 { animation-delay: 5.05s }
+    .cursor { opacity: 0; animation: fadeIn .1s 5.5s forwards, blink 1.06s 5.55s steps(1, end) infinite; }
+    .led    { transform-box: fill-box; transform-origin: center; animation: pulse 2.4s 4.4s ease-in-out infinite; }
+
+    @keyframes type    { to { clip-path: inset(0 0 0 0) } }
+    @keyframes slideIn { to { opacity: 1; transform: translateY(0) } }
+    @keyframes fadeIn  { to { opacity: 1 } }
+    @keyframes blink   { 50% { opacity: 0 } }
+    @keyframes pulse   { 0%, 100% { opacity: 1 } 50% { opacity: .35 } }
+    @media (prefers-reduced-motion: reduce) {
+      .type, .slide, .fade, .cursor, .led { animation: none; clip-path: none; opacity: 1; transform: none }
+    }
+  </style>
+
+  <rect x="1" y="1" width="898" height="358" rx="12" fill="#0d1117" stroke="#21262d"/>
+  <path d="M1 13a12 12 0 0 1 12-12h874a12 12 0 0 1 12 12v25H1z" fill="#161b22"/>
+  <line x1="1" y1="38" x2="899" y2="38" stroke="#21262d"/>
+
+  <circle cx="26" cy="20" r="5.5" fill="#f85149"/>
+  <circle cx="46" cy="20" r="5.5" fill="#e3b341"/>
+  <circle cx="66" cy="20" r="5.5" fill="#3fb950"/>
+  <text class="mono dim" x="450" y="24.5" font-size="12" text-anchor="middle">rowshanara01@production — ssh — 90×24</text>
+
+  <!-- session open -->
+  <g class="mono" font-size="14.5">
+    <text class="type d0" x="28" y="72"><tspan class="grn">➜</tspan><tspan class="fg" dx="10">ssh rowshanara01@production</tspan></text>
+    <text class="slide d1 dim" x="28" y="96">key accepted · session opened · authenticated via TLS</text>
+  </g>
+
+  <!-- identity -->
+  <g class="slide d2">
+    <text class="mono blue" x="28" y="146" font-size="28" font-weight="700" letter-spacing="1.5">ROWSHANARA AKHTER</text>
+  </g>
+  <text class="mono dim slide d3" x="28" y="170" font-size="13">Full-Stack Software Engineer · EasilyPro · Dhaka, Bangladesh 🇧🇩 · 2+ years shipping</text>
+
+  <!-- status -->
+  <g class="mono" font-size="14.5">
+    <text class="type d4" x="28" y="212"><tspan class="grn">➜</tspan><tspan class="fg" dx="10">systemctl status rowshanara01.service</tspan></text>
+    <g class="slide d5">
+      <circle class="led" cx="33" cy="231" r="4.5" fill="#3fb950"/>
+      <text class="fg" x="46" y="236">rowshanara01.service <tspan class="dim">— architecting intelligent agentic workflows & high-performance SaaS platforms</tspan></text>
+    </g>
+    <text class="slide d6" x="46" y="262" font-size="13.5"><tspan class="dim">Active:  </tspan><tspan class="grn">running</tspan><tspan class="dim"> (accepting requests &amp; open to collaborate)</tspan></text>
+    <text class="slide d7" x="46" y="286" font-size="13.5"><tspan class="dim">Runtime: </tspan><tspan class="fg">React · Next.js · TypeScript · Node.js · Express · MongoDB</tspan></text>
+    <text class="slide d8" x="46" y="310" font-size="13.5"><tspan class="dim">Focus:   </tspan><tspan class="fg">multi-tenant SaaS · agentic AI · robust API design</tspan></text>
+    <text class="type d9" x="28" y="336"><tspan class="grn">➜</tspan><tspan class="amb" dx="10">open to collaborate &amp; hire</tspan></text>
+    <rect class="cursor" x="246" y="324" width="8" height="15" fill="#e3b341"/>
+  </g>
+</svg>
