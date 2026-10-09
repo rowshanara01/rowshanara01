@@ -154,8 +154,13 @@ Education : National University
 
 | Role | Company | Period | Description |
 | :--- | :--- | :--- | :--- |
-| **Frontend Developer & AI Enthusiast** | Webraxer / Personal Projects | 2023 - Present | Developing responsive web applications, integrating Agentic AI capabilities, and building clean UI architectures. |
+| **Full-Stack Developer | EasilyPro | 2026 - Present
 
+Building and maintaining a multi-tenant SaaS application using Laravel (backend) and React (frontend)
+Resolving API integration issues between frontend and backend to ensure smooth data flow
+Fixing authentication problems, including login, token handling, and tenant-based access control
+Managing a VPS server and configuring automated deployment from GitHub, so every push to the main branch deploys the latest code
+Using AI tools such as Claude, Cursor, and ChatGPT to speed up debugging, code review, and development
 ---
 
 ### 📫 Let's Connect
