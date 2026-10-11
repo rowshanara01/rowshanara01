@@ -62,6 +62,6 @@
     <text class="fade d7" x="46" y="282" font-size="13.5"><tspan class="dim">Runtime  </tspan><tspan class="fg">React · Next.js · TypeScript · Node.js · Express · MongoDB</tspan></text>
     <text class="fade d8" x="46" y="304" font-size="13.5"><tspan class="dim">Focus    </tspan><tspan class="fg">multi-tenant SaaS · agentic AI · robust API design</tspan></text>
     <text class="type d9" x="28" y="330"><tspan class="grn">➜</tspan><tspan class="amb" dx="10">open to collaborate &amp; hire</tspan></text>
-    <rect class="cursor" x="246" y="319" width="8" height="15" fill="#e3b341"/>
+    <rect class="cursor" x="278" y="319" width="8" height="15" fill="#e3b341"/>
   </g>
 </svg>
