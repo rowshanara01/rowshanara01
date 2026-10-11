@@ -1,6 +1,6 @@
 <div align="center">
   <!-- Dynamic Typing Header -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&duration=2800&pause=1200&color=58A6FF&center=true&vCenter=true&width=620&lines=Full-Stack%20Software%20Engineer%20%E2%9A%A1;Agentic%20AI%20%26%20Web%20Solutions%20Architect%20%F0%9F%8C%90;React%20%C2%B7%20Next.js%20%C2%B7%20Node.js%20%C2%B7%20TypeScript%20%F0%9F%9A%80;Multi-Tenant%20SaaS%20Developer%20%40%20EasilyPro%20%F0%9F%92%A1;Open%20to%20Collaborate%20%26%20Hire%20%F0%9F%A4%9D" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=2800&pause=1200&color=58A6FF&center=true&vCenter=true&width=600&lines=Hey%20there!%20I'm%20Rowshanara%20Akhter%20%F0%9F%91%8B;Software%20Engineer;Full%20Stack%20Engineer;Open%20to%20Collaborate%20%F0%9F%A4%9D" alt="Typing SVG" />
   <br/><br/>
 
   <!-- Terminal Session Status -->
