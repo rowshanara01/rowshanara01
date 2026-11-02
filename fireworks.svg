@@ -1,14 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="New Year Style Celebration Fireworks for Rowshanara Akhter">
   <title>New Year Style Celebration Fireworks — @rowshanara01</title>
   <defs>
-    <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#070a0f"/>
       <stop offset="50%" stop-color="#0d1117"/>
       <stop offset="100%" stop-color="#080c14"/>
     </linearGradient>
-
-    <!-- Border Glow Gradient -->
     <linearGradient id="glowBorder" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ff0055"/>
       <stop offset="25%" stop-color="#58a6ff"/>
@@ -16,25 +13,21 @@
       <stop offset="75%" stop-color="#00f0ff"/>
       <stop offset="100%" stop-color="#b026ff"/>
     </linearGradient>
-
-    <!-- Radial Glows for Fireworks -->
     <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#fff5a6" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#ffd700" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#ffd700" stop-opacity="0.85"/>
       <stop offset="70%" stop-color="#ff9100" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#ff9100" stop-opacity="0"/>
     </radialGradient>
-
     <radialGradient id="pinkGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#ff007f" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#ff007f" stop-opacity="0.85"/>
       <stop offset="70%" stop-color="#b026ff" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#b026ff" stop-opacity="0"/>
     </radialGradient>
-
     <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="35%" stop-color="#00f0ff" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#00f0ff" stop-opacity="0.85"/>
       <stop offset="70%" stop-color="#0077ff" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#0077ff" stop-opacity="0"/>
     </radialGradient>
@@ -43,219 +36,612 @@
   <style>
     .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", "Fira Code", monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-
-    /* Star Twinkle */
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.2; transform: scale(0.8); }
-      50% { opacity: 1; transform: scale(1.3); }
-    }
-    .star-1 { animation: twinkle 2s infinite ease-in-out; transform-origin: center; }
-    .star-2 { animation: twinkle 3.1s infinite ease-in-out 0.7s; transform-origin: center; }
-    .star-3 { animation: twinkle 2.5s infinite ease-in-out 1.2s; transform-origin: center; }
-
-    /* Burst 1: Golden Burst (Left: x=190, y=90) */
-    @keyframes rocket-1 {
-      0% { transform: translateY(160px); opacity: 1; stroke-dashoffset: 40; }
-      22% { transform: translateY(0); opacity: 1; stroke-dashoffset: 0; }
-      23%, 100% { transform: translateY(0); opacity: 0; }
-    }
-    @keyframes flash-1 {
-      0%, 22% { opacity: 0; transform: scale(0.1); }
-      25% { opacity: 1; transform: scale(1.4); }
-      38%, 100% { opacity: 0; transform: scale(2.2); }
-    }
-    @keyframes sparks-1 {
-      0%, 22% { opacity: 0; transform: scale(0.05); }
-      26% { opacity: 1; }
-      46% { opacity: 0.9; }
-      60%, 100% { opacity: 0; transform: scale(1.35) translateY(12px); }
-    }
-
-    /* Burst 2: Magenta & Purple (Center: x=450, y=65) */
-    @keyframes rocket-2 {
-      0%, 28% { transform: translateY(180px); opacity: 0; }
-      29% { opacity: 1; stroke-dashoffset: 40; }
-      50% { transform: translateY(0); opacity: 1; stroke-dashoffset: 0; }
-      51%, 100% { transform: translateY(0); opacity: 0; }
-    }
-    @keyframes flash-2 {
-      0%, 50% { opacity: 0; transform: scale(0.1); }
-      53% { opacity: 1; transform: scale(1.5); }
-      66%, 100% { opacity: 0; transform: scale(2.4); }
-    }
-    @keyframes sparks-2 {
-      0%, 50% { opacity: 0; transform: scale(0.05); }
-      54% { opacity: 1; }
-      74% { opacity: 0.9; }
-      88%, 100% { opacity: 0; transform: scale(1.4) translateY(14px); }
-    }
-
-    /* Burst 3: Electric Cyan & Mint (Right: x=710, y=85) */
-    @keyframes rocket-3 {
-      0%, 55% { transform: translateY(160px); opacity: 0; }
-      56% { opacity: 1; stroke-dashoffset: 40; }
-      75% { transform: translateY(0); opacity: 1; stroke-dashoffset: 0; }
-      76%, 100% { transform: translateY(0); opacity: 0; }
-    }
-    @keyframes flash-3 {
-      0%, 75% { opacity: 0; transform: scale(0.1); }
-      78% { opacity: 1; transform: scale(1.4); }
-      90%, 100% { opacity: 0; transform: scale(2.2); }
-    }
-    @keyframes sparks-3 {
-      0%, 75% { opacity: 0; transform: scale(0.05); }
-      79% { opacity: 1; }
-      93% { opacity: 0.9; }
-      100% { opacity: 0; transform: scale(1.35) translateY(12px); }
-    }
-
-    /* Global loop of 4.5 seconds */
-    .r-tail-1 { animation: rocket-1 4.5s infinite linear; }
-    .flash-b1 { animation: flash-1 4.5s infinite ease-out; transform-origin: 190px 90px; }
-    .burst-g1 { animation: sparks-1 4.5s infinite ease-out; transform-origin: 190px 90px; }
-
-    .r-tail-2 { animation: rocket-2 4.5s infinite linear; }
-    .flash-b2 { animation: flash-2 4.5s infinite ease-out; transform-origin: 450px 65px; }
-    .burst-g2 { animation: sparks-2 4.5s infinite ease-out; transform-origin: 450px 65px; }
-
-    .r-tail-3 { animation: rocket-3 4.5s infinite linear; }
-    .flash-b3 { animation: flash-3 4.5s infinite ease-out; transform-origin: 710px 85px; }
-    .burst-g3 { animation: sparks-3 4.5s infinite ease-out; transform-origin: 710px 85px; }
-
-    /* Badge Pulsing Glow */
-    @keyframes badge-glow {
-      0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 6px rgba(88, 166, 255, 0.4)); }
-      50% { opacity: 1; filter: drop-shadow(0 0 14px rgba(255, 215, 0, 0.6)); }
-    }
-    .badge-card { animation: badge-glow 3s infinite ease-in-out; }
   </style>
 
   <!-- Container Box with Rounded Edges -->
   <rect x="2" y="2" width="896" height="236" rx="14" fill="url(#bgGrad)" stroke="#21262d" stroke-width="1.5"/>
   <rect x="2" y="2" width="896" height="3" rx="1.5" fill="url(#glowBorder)"/>
 
-  <!-- Background Stars & Twinkles -->
+  <!-- Background Twinkling Stars (SMIL animated) -->
   <g fill="#ffffff">
-    <circle cx="80" cy="40" r="1.5" class="star-1"/>
-    <circle cx="140" cy="130" r="1" class="star-2"/>
-    <circle cx="280" cy="45" r="1.8" class="star-3"/>
-    <circle cx="340" cy="115" r="1.2" class="star-1"/>
-    <circle cx="560" cy="35" r="1.5" class="star-2"/>
-    <circle cx="620" cy="120" r="1.2" class="star-3"/>
-    <circle cx="780" cy="50" r="1.6" class="star-1"/>
-    <circle cx="840" cy="110" r="1" class="star-2"/>
-    <circle cx="480" cy="140" r="1.4" class="star-3"/>
+    <circle cx="80" cy="40" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="130" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="45" r="1.8"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="340" cy="115" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="35" r="1.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="120" r="1.2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.0s" repeatCount="indefinite"/></circle>
+    <circle cx="780" cy="50" r="1.6"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="840" cy="110" r="1.2"><animate attributeName="opacity" values="0.1;1;0.1" dur="2.7s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- ==================== FIREWORK 1: GOLD & AMBER (LEFT: 190, 90) ==================== -->
-  <line x1="190" y1="230" x2="190" y2="90" stroke="#ffd700" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" class="r-tail-1"/>
-  <circle cx="190" cy="90" r="28" fill="url(#goldGlow)" class="flash-b1"/>
-  <circle cx="190" cy="90" r="38" stroke="#ffe57f" stroke-width="1.5" fill="none" class="flash-b1"/>
-  <g class="burst-g1">
-    <circle cx="190" cy="50" r="3" fill="#ffffff"/>
-    <circle cx="220" cy="62" r="2.8" fill="#ffd700"/>
-    <circle cx="230" cy="90" r="3.2" fill="#ffaa00"/>
-    <circle cx="220" cy="118" r="2.8" fill="#ffd700"/>
-    <circle cx="190" cy="130" r="3" fill="#ff7700"/>
-    <circle cx="160" cy="118" r="2.8" fill="#ffd700"/>
-    <circle cx="150" cy="90" r="3.2" fill="#ffaa00"/>
-    <circle cx="160" cy="62" r="2.8" fill="#ffd700"/>
-    <circle cx="190" cy="25" r="2.2" fill="#ffe57f"/>
-    <circle cx="240" cy="40" r="2" fill="#ffd700"/>
-    <circle cx="255" cy="90" r="2.4" fill="#ff9100"/>
-    <circle cx="240" cy="140" r="2" fill="#ffd700"/>
-    <circle cx="190" cy="155" r="2.2" fill="#ffe57f"/>
-    <circle cx="140" cy="140" r="2" fill="#ffd700"/>
-    <circle cx="125" cy="90" r="2.4" fill="#ff9100"/>
-    <circle cx="140" cy="40" r="2" fill="#ffd700"/>
-    <line x1="190" y1="90" x2="190" y2="40" stroke="#ffd700" stroke-width="1.2" opacity="0.7"/>
-    <line x1="190" y1="90" x2="228" y2="60" stroke="#ffaa00" stroke-width="1.2" opacity="0.7"/>
-    <line x1="190" y1="90" x2="238" y2="90" stroke="#ffd700" stroke-width="1.2" opacity="0.7"/>
-    <line x1="190" y1="90" x2="228" y2="120" stroke="#ffaa00" stroke-width="1.2" opacity="0.7"/>
-    <line x1="190" y1="90" x2="190" y2="140" stroke="#ffd700" stroke-width="1.2" opacity="0.7"/>
-    <line x1="190" y1="90" x2="152" y2="120" stroke="#ffaa00" stroke-width="1.2" opacity="0.7"/>
-    <line x1="190" y1="90" x2="142" y2="90" stroke="#ffd700" stroke-width="1.2" opacity="0.7"/>
-    <line x1="190" y1="90" x2="152" y2="60" stroke="#ffaa00" stroke-width="1.2" opacity="0.7"/>
-  </g>
+  <!-- === FIREWORK 1 (#ffd700) === -->
+  <circle r="3.5" fill="#ffd700">
+    <animate attributeName="cx" values="190;190;190;190" keyTimes="0;0.022;0.111;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="235;235;85;235" keyTimes="0;0.022;0.111;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.022;0.111;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="235" x2="190" y2="85" stroke="#ffaa00" stroke-width="2" stroke-dasharray="6 4" stroke-linecap="round">
+    <animate attributeName="y1" values="235;235;120;235" keyTimes="0;0.022;0.111;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.022;0.111;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="190" cy="85" fill="url(#goldGlow)">
+    <animate attributeName="r" values="0;0;55;80;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="235" y2="85" stroke="#ffd700" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;235;263;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;85;95;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="235" cy="85" r="3" fill="#ffd700">
+    <animate attributeName="cx" values="190;190;235;263;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;85;95;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="246" y2="108" stroke="#ffaa00" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;246;272;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;108;129;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="246" cy="108" r="3" fill="#ffaa00">
+    <animate attributeName="cx" values="190;190;246;272;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;108;129;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="244" y2="139" stroke="#ffe57f" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;244;264;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;139;169;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="244" cy="139" r="3" fill="#ffe57f">
+    <animate attributeName="cx" values="190;190;244;264;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;139;169;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="207" y2="127" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;207;218;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;127;162;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="207" cy="127" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="190;190;207;218;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;127;162;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="190" y2="146" stroke="#ffd700" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;190;190;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;146;184;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="190" cy="146" r="3" fill="#ffd700">
+    <animate attributeName="cx" values="190;190;190;190;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;146;184;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="161" y2="156" stroke="#ffaa00" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;161;150;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;156;192;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="161" cy="156" r="3" fill="#ffaa00">
+    <animate attributeName="cx" values="190;190;161;150;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;156;192;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="158" y2="117" stroke="#ffe57f" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;158;138;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;117;147;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="158" cy="117" r="3" fill="#ffe57f">
+    <animate attributeName="cx" values="190;190;158;138;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;117;147;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="134" y2="108" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;134;108;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;108;129;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="134" cy="108" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="190;190;134;108;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;108;129;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="113" y2="85" stroke="#ffd700" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;113;85;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;85;95;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="113" cy="85" r="3" fill="#ffd700">
+    <animate attributeName="cx" values="190;190;113;85;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;85;95;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="148" y2="68" stroke="#ffaa00" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;148;123;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;68;67;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="148" cy="68" r="3" fill="#ffaa00">
+    <animate attributeName="cx" values="190;190;148;123;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;68;67;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="147" y2="42" stroke="#ffe57f" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;147;127;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;42;32;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="147" cy="42" r="3" fill="#ffe57f">
+    <animate attributeName="cx" values="190;190;147;127;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;42;32;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="161" y2="14" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;161;150;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;14;-2;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="161" cy="14" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="190;190;161;150;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;14;-2;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="190" y2="40" stroke="#ffd700" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;190;190;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;40;22;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="190" cy="40" r="3" fill="#ffd700">
+    <animate attributeName="cx" values="190;190;190;190;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;40;22;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="213" y2="29" stroke="#ffaa00" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;213;224;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;29;13;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="213" cy="29" r="3" fill="#ffaa00">
+    <animate attributeName="cx" values="190;190;213;224;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;29;13;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="244" y2="31" stroke="#ffe57f" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;244;264;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;31;21;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="244" cy="31" r="3" fill="#ffe57f">
+    <animate attributeName="cx" values="190;190;244;264;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;31;21;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="190" y1="85" x2="232" y2="68" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="190;190;232;257;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;68;67;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="232" cy="68" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="190;190;232;257;190" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;68;67;85" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.022;0.111;0.400;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- ==================== FIREWORK 2: MAGENTA & PURPLE (CENTER: 450, 65) ==================== -->
-  <line x1="450" y1="230" x2="450" y2="65" stroke="#ff007f" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" class="r-tail-2"/>
-  <circle cx="450" cy="65" r="32" fill="url(#pinkGlow)" class="flash-b2"/>
-  <circle cx="450" cy="65" r="42" stroke="#ff77c6" stroke-width="1.5" fill="none" class="flash-b2"/>
-  <g class="burst-g2">
-    <circle cx="450" cy="20" r="3.2" fill="#ffffff"/>
-    <circle cx="482" cy="33" r="3" fill="#ff007f"/>
-    <circle cx="495" cy="65" r="3.2" fill="#b026ff"/>
-    <circle cx="482" cy="97" r="3" fill="#ff007f"/>
-    <circle cx="450" cy="110" r="3.2" fill="#ffffff"/>
-    <circle cx="418" cy="97" r="3" fill="#b026ff"/>
-    <circle cx="405" cy="65" r="3.2" fill="#ff007f"/>
-    <circle cx="418" cy="33" r="3" fill="#ffffff"/>
-    <circle cx="450" cy="-5" r="2.2" fill="#ff77c6"/>
-    <circle cx="505" cy="18" r="2" fill="#b026ff"/>
-    <circle cx="525" cy="65" r="2.4" fill="#ff007f"/>
-    <circle cx="505" cy="112" r="2" fill="#ff77c6"/>
-    <circle cx="450" cy="135" r="2.2" fill="#b026ff"/>
-    <circle cx="395" cy="112" r="2" fill="#ff007f"/>
-    <circle cx="375" cy="65" r="2.4" fill="#ff77c6"/>
-    <circle cx="395" cy="18" r="2" fill="#b026ff"/>
-    <line x1="450" y1="65" x2="450" y2="15" stroke="#ff77c6" stroke-width="1.2" opacity="0.75"/>
-    <line x1="450" y1="65" x2="492" y2="30" stroke="#b026ff" stroke-width="1.2" opacity="0.75"/>
-    <line x1="450" y1="65" x2="505" y2="65" stroke="#ff007f" stroke-width="1.2" opacity="0.75"/>
-    <line x1="450" y1="65" x2="492" y2="100" stroke="#b026ff" stroke-width="1.2" opacity="0.75"/>
-    <line x1="450" y1="65" x2="450" y2="115" stroke="#ff77c6" stroke-width="1.2" opacity="0.75"/>
-    <line x1="450" y1="65" x2="408" y2="100" stroke="#b026ff" stroke-width="1.2" opacity="0.75"/>
-    <line x1="450" y1="65" x2="395" y2="65" stroke="#ff007f" stroke-width="1.2" opacity="0.75"/>
-    <line x1="450" y1="65" x2="408" y2="30" stroke="#b026ff" stroke-width="1.2" opacity="0.75"/>
-  </g>
+  <!-- === FIREWORK 2 (#ff007f) === -->
+  <circle r="3.5" fill="#ff007f">
+    <animate attributeName="cx" values="450;450;450;450" keyTimes="0;0.267;0.378;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="235;235;68;235" keyTimes="0;0.267;0.378;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.267;0.378;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="235" x2="450" y2="68" stroke="#b026ff" stroke-width="2" stroke-dasharray="6 4" stroke-linecap="round">
+    <animate attributeName="y1" values="235;235;103;235" keyTimes="0;0.267;0.378;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.267;0.378;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="450" cy="68" fill="url(#pinkGlow)">
+    <animate attributeName="r" values="0;0;55;80;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="495" y2="68" stroke="#ff007f" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;495;523;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;68;78;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="495" cy="68" r="3" fill="#ff007f">
+    <animate attributeName="cx" values="450;450;495;523;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;68;78;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="506" y2="91" stroke="#b026ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;506;532;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;91;112;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="506" cy="91" r="3" fill="#b026ff">
+    <animate attributeName="cx" values="450;450;506;532;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;91;112;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="504" y2="122" stroke="#ff77c6" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;504;524;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;122;152;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="504" cy="122" r="3" fill="#ff77c6">
+    <animate attributeName="cx" values="450;450;504;524;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;122;152;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="467" y2="110" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;467;478;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;110;145;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="467" cy="110" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="450;450;467;478;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;110;145;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="450" y2="129" stroke="#ff007f" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;450;450;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;129;167;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="450" cy="129" r="3" fill="#ff007f">
+    <animate attributeName="cx" values="450;450;450;450;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;129;167;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="421" y2="139" stroke="#b026ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;421;410;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;139;175;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="421" cy="139" r="3" fill="#b026ff">
+    <animate attributeName="cx" values="450;450;421;410;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;139;175;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="418" y2="100" stroke="#ff77c6" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;418;398;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;100;130;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="418" cy="100" r="3" fill="#ff77c6">
+    <animate attributeName="cx" values="450;450;418;398;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;100;130;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="394" y2="91" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;394;368;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;91;112;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="394" cy="91" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="450;450;394;368;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;91;112;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="373" y2="68" stroke="#ff007f" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;373;345;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;68;78;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="373" cy="68" r="3" fill="#ff007f">
+    <animate attributeName="cx" values="450;450;373;345;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;68;78;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="408" y2="51" stroke="#b026ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;408;383;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;51;50;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="408" cy="51" r="3" fill="#b026ff">
+    <animate attributeName="cx" values="450;450;408;383;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;51;50;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="407" y2="25" stroke="#ff77c6" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;407;387;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;25;15;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="407" cy="25" r="3" fill="#ff77c6">
+    <animate attributeName="cx" values="450;450;407;387;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;25;15;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="421" y2="-3" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;421;410;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;-3;-19;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="421" cy="-3" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="450;450;421;410;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;-3;-19;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="450" y2="23" stroke="#ff007f" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;450;450;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;23;5;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="450" cy="23" r="3" fill="#ff007f">
+    <animate attributeName="cx" values="450;450;450;450;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;23;5;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="473" y2="12" stroke="#b026ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;473;484;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;12;-4;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="473" cy="12" r="3" fill="#b026ff">
+    <animate attributeName="cx" values="450;450;473;484;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;12;-4;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="504" y2="14" stroke="#ff77c6" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;504;524;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;14;4;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="504" cy="14" r="3" fill="#ff77c6">
+    <animate attributeName="cx" values="450;450;504;524;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;14;4;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="450" y1="68" x2="492" y2="51" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="450;450;492;517;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="68;68;51;50;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="492" cy="51" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="450;450;492;517;450" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="68;68;51;50;68" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.267;0.378;0.689;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- ==================== FIREWORK 3: ELECTRIC CYAN & MINT (RIGHT: 710, 85) ==================== -->
-  <line x1="710" y1="230" x2="710" y2="85" stroke="#00f0ff" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round" class="r-tail-3"/>
-  <circle cx="710" cy="85" r="28" fill="url(#cyanGlow)" class="flash-b3"/>
-  <circle cx="710" cy="85" r="38" stroke="#70f3ff" stroke-width="1.5" fill="none" class="flash-b3"/>
-  <g class="burst-g3">
-    <circle cx="710" cy="45" r="3" fill="#ffffff"/>
-    <circle cx="738" cy="57" r="2.8" fill="#00f0ff"/>
-    <circle cx="750" cy="85" r="3.2" fill="#00e5a3"/>
-    <circle cx="738" cy="113" r="2.8" fill="#00f0ff"/>
-    <circle cx="710" cy="125" r="3" fill="#38d9a9"/>
-    <circle cx="682" cy="113" r="2.8" fill="#00f0ff"/>
-    <circle cx="670" cy="85" r="3.2" fill="#00e5a3"/>
-    <circle cx="682" cy="57" r="2.8" fill="#00f0ff"/>
-    <circle cx="710" cy="20" r="2.2" fill="#70f3ff"/>
-    <circle cx="758" cy="35" r="2" fill="#00f0ff"/>
-    <circle cx="775" cy="85" r="2.4" fill="#00e5a3"/>
-    <circle cx="758" cy="135" r="2" fill="#00f0ff"/>
-    <circle cx="710" cy="150" r="2.2" fill="#70f3ff"/>
-    <circle cx="662" cy="135" r="2" fill="#00f0ff"/>
-    <circle cx="645" cy="85" r="2.4" fill="#00e5a3"/>
-    <circle cx="662" cy="35" r="2" fill="#00f0ff"/>
-    <line x1="710" y1="85" x2="710" y2="35" stroke="#00f0ff" stroke-width="1.2" opacity="0.7"/>
-    <line x1="710" y1="85" x2="748" y2="55" stroke="#00e5a3" stroke-width="1.2" opacity="0.7"/>
-    <line x1="710" y1="85" x2="758" y2="85" stroke="#00f0ff" stroke-width="1.2" opacity="0.7"/>
-    <line x1="710" y1="85" x2="748" y2="115" stroke="#00e5a3" stroke-width="1.2" opacity="0.7"/>
-    <line x1="710" y1="85" x2="710" y2="135" stroke="#00f0ff" stroke-width="1.2" opacity="0.7"/>
-    <line x1="710" y1="85" x2="672" y2="115" stroke="#00e5a3" stroke-width="1.2" opacity="0.7"/>
-    <line x1="710" y1="85" x2="662" y2="85" stroke="#00f0ff" stroke-width="1.2" opacity="0.7"/>
-    <line x1="710" y1="85" x2="672" y2="55" stroke="#00e5a3" stroke-width="1.2" opacity="0.7"/>
-  </g>
+  <!-- === FIREWORK 3 (#00f0ff) === -->
+  <circle r="3.5" fill="#00f0ff">
+    <animate attributeName="cx" values="710;710;710;710" keyTimes="0;0.511;0.622;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="235;235;85;235" keyTimes="0;0.511;0.622;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.511;0.622;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="235" x2="710" y2="85" stroke="#00e5a3" stroke-width="2" stroke-dasharray="6 4" stroke-linecap="round">
+    <animate attributeName="y1" values="235;235;120;235" keyTimes="0;0.511;0.622;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.511;0.622;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="710" cy="85" fill="url(#cyanGlow)">
+    <animate attributeName="r" values="0;0;55;80;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="755" y2="85" stroke="#00f0ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;755;783;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;85;95;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="755" cy="85" r="3" fill="#00f0ff">
+    <animate attributeName="cx" values="710;710;755;783;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;85;95;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="766" y2="108" stroke="#00e5a3" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;766;792;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;108;129;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="766" cy="108" r="3" fill="#00e5a3">
+    <animate attributeName="cx" values="710;710;766;792;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;108;129;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="764" y2="139" stroke="#70f3ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;764;784;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;139;169;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="764" cy="139" r="3" fill="#70f3ff">
+    <animate attributeName="cx" values="710;710;764;784;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;139;169;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="727" y2="127" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;727;738;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;127;162;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="727" cy="127" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="710;710;727;738;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;127;162;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="710" y2="146" stroke="#00f0ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;710;710;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;146;184;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="710" cy="146" r="3" fill="#00f0ff">
+    <animate attributeName="cx" values="710;710;710;710;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;146;184;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="681" y2="156" stroke="#00e5a3" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;681;670;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;156;192;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="681" cy="156" r="3" fill="#00e5a3">
+    <animate attributeName="cx" values="710;710;681;670;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;156;192;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="678" y2="117" stroke="#70f3ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;678;658;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;117;147;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="678" cy="117" r="3" fill="#70f3ff">
+    <animate attributeName="cx" values="710;710;678;658;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;117;147;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="654" y2="108" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;654;628;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;108;129;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="654" cy="108" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="710;710;654;628;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;108;129;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="633" y2="85" stroke="#00f0ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;633;605;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;85;95;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="633" cy="85" r="3" fill="#00f0ff">
+    <animate attributeName="cx" values="710;710;633;605;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;85;95;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="668" y2="68" stroke="#00e5a3" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;668;643;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;68;67;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="668" cy="68" r="3" fill="#00e5a3">
+    <animate attributeName="cx" values="710;710;668;643;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;68;67;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="667" y2="42" stroke="#70f3ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;667;647;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;42;32;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="667" cy="42" r="3" fill="#70f3ff">
+    <animate attributeName="cx" values="710;710;667;647;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;42;32;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="681" y2="14" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;681;670;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;14;-2;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="681" cy="14" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="710;710;681;670;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;14;-2;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="710" y2="40" stroke="#00f0ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;710;710;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;40;22;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="710" cy="40" r="3" fill="#00f0ff">
+    <animate attributeName="cx" values="710;710;710;710;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;40;22;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="733" y2="29" stroke="#00e5a3" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;733;744;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;29;13;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="733" cy="29" r="3" fill="#00e5a3">
+    <animate attributeName="cx" values="710;710;733;744;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;29;13;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="764" y2="31" stroke="#70f3ff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;764;784;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;31;21;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="764" cy="31" r="3" fill="#70f3ff">
+    <animate attributeName="cx" values="710;710;764;784;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;31;21;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <line x1="710" y1="85" x2="752" y2="68" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round">
+    <animate attributeName="x2" values="710;710;752;777;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="85;85;68;67;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.95;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <circle cx="752" cy="68" r="3" fill="#ffffff">
+    <animate attributeName="cx" values="710;710;752;777;710" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="85;85;68;67;85" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="0;0;3.8;1.6;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.511;0.622;0.933;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+
 
   <!-- ==================== CENTER CELEBRATION BADGE CARD ==================== -->
-  <g class="badge-card" transform="translate(0, 0)">
-    <rect x="235" y="148" width="430" height="74" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+  <g transform="translate(0, 0)">
+    <rect x="235" y="148" width="430" height="74" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2">
+      <animate attributeName="stroke" values="#30363d;#58a6ff;#ffd700;#ff007f;#30363d" dur="6s" repeatCount="indefinite"/>
+    </rect>
     <rect x="245" y="152" width="410" height="2" rx="1" fill="url(#glowBorder)"/>
-
     <text x="252" y="190" font-size="20">🎆</text>
     <text x="626" y="190" font-size="20">🎆</text>
-
     <text class="mono" x="450" y="171" font-size="11.5" font-weight="700" fill="#ffd700" letter-spacing="1.5" text-anchor="middle">
       ✨ NEW YEAR CELEBRATION · WELCOME TO MY PROFILE ✨
     </text>
-
     <text class="sans" x="450" y="195" font-size="17" font-weight="800" fill="#f0f6fc" letter-spacing="0.5" text-anchor="middle">
       Rowshanara Akhter
     </text>
-
     <text class="mono" x="450" y="212" font-size="11" fill="#58a6ff" text-anchor="middle">
       Full-Stack Software Engineer · <tspan fill="#3fb950">Active on GitHub</tspan>
     </text>
