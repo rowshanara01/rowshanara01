@@ -181,18 +181,22 @@ flowchart LR
 
 ## `GET /metrics`
 
-<div align="center">
+<p align="center">
   <!-- Live Profile Visitors Count Box -->
   <a href="https://github.com/rowshanara01/rowshanara01/graphs/traffic">
     <img src="https://komarev.com/ghpvc/?username=rowshanara01&label=PROFILE%20VIEWS%20COUNT&color=1f6feb&style=for-the-badge" alt="Profile Views Count"/>
   </a>
-  <br/><br/>
-  <!-- In-Repo 100% Uptime Guaranteed SVGs (Zero Vercel/GitHub API 504 timeouts, loads in 15ms) -->
-  <img height="175" src="./stats.svg" alt="GitHub stats"/>
-  <img height="175" src="https://streak-stats.demolab.com?user=rowshanara01&hide_border=true&background=0d1117&stroke=21262d&ring=58a6ff&fire=e3b341&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="contribution streak"/>
-  <br/><br/>
-  <img height="165" src="./top-langs.svg" alt="most used languages"/>
-</div>
+</p>
+
+<p align="center">
+  <!-- Side-by-side GitHub Stats and Contribution Streak (Width 49% keeps them perfectly parallel on one line) -->
+  <img width="49%" src="./stats.svg" alt="GitHub stats"/>
+  <img width="49%" src="https://streak-stats.demolab.com?user=rowshanara01&hide_border=true&background=0d1117&stroke=21262d&ring=58a6ff&fire=e3b341&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="contribution streak"/>
+</p>
+
+<p align="center">
+  <img width="60%" src="./top-langs.svg" alt="most used languages"/>
+</p>
 
 ### `tail -f /var/log/commits`
 
