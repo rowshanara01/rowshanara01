@@ -1,4 +1,8 @@
 <div align="center">
+  <!-- 🎆 NEW YEAR STYLE CELEBRATION FIREWORKS (AUTOPLAYS ON PROFILE LOAD) -->
+  <img src="./fireworks.svg" alt="New Year Style Celebration Fireworks" width="100%" />
+  <br/><br/>
+
   <!-- Dynamic Typing Header (Width 850 prevents text from getting cut off) -->
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=2800&pause=1200&color=58A6FF&center=true&vCenter=true&width=850&lines=Hey%20there!%20I'm%20Rowshanara%20Akhter%20%F0%9F%91%8B;Software%20Engineer;Full%20Stack%20Engineer;Open%20to%20Collaborate%20%F0%9F%A4%9D" alt="Typing SVG" />
   <br/><br/>
@@ -183,16 +187,17 @@ flowchart LR
     <img src="https://komarev.com/ghpvc/?username=rowshanara01&label=PROFILE%20VIEWS%20COUNT&color=1f6feb&style=for-the-badge" alt="Profile Views Count"/>
   </a>
   <br/><br/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=rowshanara01&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=8b949e" alt="GitHub stats"/>
-  <img height="170" src="https://streak-stats.demolab.com?user=rowshanara01&hide_border=true&background=0d1117&stroke=21262d&ring=58a6ff&fire=e3b341&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="contribution streak"/>
+  <!-- In-Repo 100% Uptime Guaranteed SVGs (Zero Vercel/GitHub API 504 timeouts, loads in 15ms) -->
+  <img height="175" src="./stats.svg" alt="GitHub stats"/>
+  <img height="175" src="https://streak-stats.demolab.com?user=rowshanara01&hide_border=true&background=0d1117&stroke=21262d&ring=58a6ff&fire=e3b341&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="contribution streak"/>
   <br/><br/>
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rowshanara01&layout=compact&langs_count=8&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" alt="most used languages"/>
+  <img height="165" src="./top-langs.svg" alt="most used languages"/>
 </div>
 
 ### `tail -f /var/log/commits`
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rowshanara01&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=c9d1d9&area=true&area_color=1f6feb&custom_title=commit%20throughput%20·%20last%2031%20days" width="100%" alt="commit activity graph"/>
+  <img src="https://ghchart.rshah.org/58a6ff/rowshanara01" width="100%" alt="Rowshanara Akhter's Github Contribution Chart"/>
 </div>
 
 ### `tail -f /var/log/contributions/snake`
