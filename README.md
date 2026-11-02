@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- 🎆 NEW YEAR STYLE CELEBRATION FIREWORKS (AUTOPLAYS ON PROFILE LOAD) -->
-  <img src="./fireworks.svg" alt="New Year Style Celebration Fireworks" width="100%" />
+  <!-- 🎆 CELEBRATION FIREWORKS (AUTOPLAYS ON PROFILE LOAD) -->
+  <img src="./fireworks.svg" alt="Celebration Fireworks — Welcome to My Profile" width="100%" />
   <br/><br/>
 
   <!-- Dynamic Typing Header (Width 850 prevents text from getting cut off) -->
@@ -194,8 +194,8 @@ flowchart LR
   <img width="49%" src="https://streak-stats.demolab.com?user=rowshanara01&hide_border=true&background=0d1117&stroke=21262d&ring=58a6ff&fire=e3b341&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="contribution streak"/>
 </p>
 
-<p align="center">
-  <img width="60%" src="./top-langs.svg" alt="most used languages"/>
+<p align="left">
+  <img src="./top-langs.svg" alt="most used languages"/>
 </p>
 
 ### `tail -f /var/log/commits`
