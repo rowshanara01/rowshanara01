@@ -17,5 +17,5 @@
   <circle class="led" cx="32" cy="36" r="4.5" fill="#3fb950"/>
   <text class="mono" x="46" y="41" font-size="13.5" fill="#8b949e">connection: <tspan fill="#3fb950">keep-alive</tspan> · 200 OK · inbox open</text>
   <text class="mono" x="32" y="72" font-size="15" fill="#c9d1d9">Thanks for reading the docs. <tspan fill="#58a6ff">Feel free to connect anytime.</tspan></text>
-  <text class="mono" x="868" y="72" font-size="13" fill="#8b949e" text-anchor="end">persional-website-8fey.vercel.app</text>
+  <text class="mono" x="868" y="72" font-size="13" fill="#8b949e" text-anchor="end">my-portfolio-lilac-eta-k4ujk0vbvg.vercel.app</text>
 </svg>

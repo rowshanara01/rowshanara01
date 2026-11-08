@@ -208,16 +208,30 @@ flowchart LR
   </tr>
   <tr>
     <td width="50%" valign="top" style="padding: 12px; background-color: #0d1117; border-radius: 8px;">
-      <h4>📘 <a href="https://persional-website-8fey.vercel.app/" target="_blank"><b>Developer Portfolio & Showcase</b></a></h4>
-      <sub><b>INTERACTIVE WEB APP</b></sub><br/>
+      <h4>📘 <a href="https://my-portfolio-lilac-eta-k4ujk0vbvg.vercel.app/" target="_blank"><b>Developer Portfolio & AI Showcase</b></a></h4>
+      <sub><b>INTERACTIVE WEB APP & AI PORTFOLIO</b></sub><br/>
       <p>Interactive modern portfolio showcasing AI solutions, engineering projects, performance benchmarks, and contact avenues.</p>
       <code>React / TypeScript / Tailwind CSS / Motion</code>
     </td>
+    <td width="50%" valign="top" style="padding: 12px; background-color: #0d1117; border-radius: 8px;">
+      <h4>✨ <a href="https://rowshanara-portfolio-six.vercel.app/" target="_blank"><b>Full-Stack Engineer Portfolio</b></a></h4>
+      <sub><b>SAAS, AI & MOBILE SHOWCASE</b></sub><br/>
+      <p>High-performance developer showcase highlighting SaaS architectures, full-stack systems, and mobile applications.</p>
+      <code>Next.js / TypeScript / Tailwind CSS / Vercel</code>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top" style="padding: 12px; background-color: #0d1117; border-radius: 8px;">
       <h4>🟢 <a href="https://elite-ecommerce-shop.vercel.app" target="_blank"><b>Elite Ecommerce Shop</b></a></h4>
       <sub><b>PRODUCT SHOWCASE & STORE</b></sub><br/>
       <p>High-converting online shopping store featuring responsive UI design, lightning-fast rendering, and catalog filtering.</p>
       <code>Next.js / TypeScript / Tailwind CSS</code>
+    </td>
+    <td width="50%" valign="top" style="padding: 12px; background-color: #0d1117; border-radius: 8px;">
+      <h4>⚡ <a href="https://github.com/rowshanara01" target="_blank"><b>Open Source & Architecture Blueprints</b></a></h4>
+      <sub><b>CODEBASE & ALGORITHMS</b></sub><br/>
+      <p>Public repositories, architecture blueprints, agent workflows, and open-source contributions.</p>
+      <code>Full Stack / Cloud / Agentic AI</code>
     </td>
   </tr>
 </table>
@@ -293,7 +307,8 @@ flowchart LR
   <a href="https://www.linkedin.com/in/rowshanara-akhter-4a8042258/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:rowshanaraakhter9@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
   <a href="https://wa.me/01779524129"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
-  <a href="https://persional-website-8fey.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://my-portfolio-lilac-eta-k4ujk0vbvg.vercel.app/"><img src="https://img.shields.io/badge/Portfolio%201-FF5722?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Portfolio 1" /></a>
+  <a href="https://rowshanara-portfolio-six.vercel.app/"><img src="https://img.shields.io/badge/Portfolio%202-06B6D4?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio 2" /></a>
 </div>
 
 ---
