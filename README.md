@@ -83,6 +83,51 @@ flowchart LR
     WRK -.-> DEPLOY
 ```
 
+### 🧩 Architectural Components & Tech Stack
+<!-- Individual Tech Stack Badges (ছোট টুকরো টুকরো আর্কিটেকচার ব্যাজ) -->
+<div align="left">
+
+**Client & Frontend Architecture**<br/>
+![React.js](https://img.shields.io/badge/-React.js-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Redux](https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+<br/><br/>
+
+**Backend, Gateway & AI Engine**<br/>
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Agentic AI](https://img.shields.io/badge/-Agentic%20AI-7A39FB?style=flat-square&logo=openai&logoColor=white)
+![REST APIs](https://img.shields.io/badge/-REST%20APIs-005571?style=flat-square&logo=postman&logoColor=white)
+<br/><br/>
+
+**Database & Persistence Layer**<br/>
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![WordPress](https://img.shields.io/badge/-WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white)
+<br/><br/>
+
+**DevOps, Tools & Infrastructure**<br/>
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+![Stripe](https://img.shields.io/badge/-Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white)
+![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+</div>
+
 <img src="./divider.svg" width="100%"/>
 
 ## `GET /endpoints`
@@ -188,15 +233,14 @@ flowchart LR
   </a>
 </p>
 
-<p align="center">
-  <!-- Side-by-side GitHub Stats and Contribution Streak (Width 49% keeps them perfectly parallel on one line) -->
-  <img width="49%" src="./stats.svg" alt="GitHub stats"/>
+<div align="center">
+  <!-- 1 & 2: Side-by-side GitHub Stats and Contribution Streak (Live Real-Time Auto-Updating) -->
+  <img width="49%" src="https://github-readme-stats-fast.vercel.app/api?username=rowshanara01&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=8b949e" alt="GitHub stats"/>
   <img width="49%" src="https://streak-stats.demolab.com?user=rowshanara01&hide_border=true&background=0d1117&stroke=21262d&ring=58a6ff&fire=e3b341&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="contribution streak"/>
-</p>
-
-<p align="left">
-  <img src="./top-langs.svg" alt="most used languages"/>
-</p>
+  <br/><br/>
+  <!-- 3: Most Used Languages (উপরে ২ টার নিচে ঠিক মাঝখানে) Live Auto-Updating -->
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=rowshanara01&layout=compact&langs_count=8&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" alt="most used languages"/>
+</div>
 
 ### `tail -f /var/log/commits`
 
