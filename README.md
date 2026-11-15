@@ -130,31 +130,25 @@ flowchart LR
 **Active Languages & Newly Detected Tech (Auto-Synced All Repositories)**<br/>
 <!-- AUTO-TECH-START -->
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Laravel Blade](https://img.shields.io/badge/-Laravel%20Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Laravel Blade](https://img.shields.io/badge/-Laravel%20Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
 ![MDX](https://img.shields.io/badge/-MDX-1B1F24?style=flat-square&logo=mdx&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 ![Sass/SCSS](https://img.shields.io/badge/-Sass%2FSCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
-![Sass](https://img.shields.io/badge/-Sass-1f6feb?style=flat-square)
 ![Shell](https://img.shields.io/badge/-Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![CMake](https://img.shields.io/badge/-CMake-1f6feb?style=flat-square)
 ![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Swift](https://img.shields.io/badge/-Swift-F05138?style=flat-square&logo=swift&logoColor=white)
 ![TeX](https://img.shields.io/badge/-TeX-1f6feb?style=flat-square)
 ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![PowerShell](https://img.shields.io/badge/-PowerShell-1f6feb?style=flat-square)
-![Batchfile](https://img.shields.io/badge/-Batchfile-1f6feb?style=flat-square)
-![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Handlebars](https://img.shields.io/badge/-Handlebars-1f6feb?style=flat-square)
+![Makefile](https://img.shields.io/badge/-Makefile-1f6feb?style=flat-square)
 <br/>
-<sub>⚡ Auto-synced across <b>124</b> repositories · <b>122</b> stars earned · Updated <code>2026-11-15 03:16 UTC</code></sub>
+<sub>⚡ Auto-synced across <b>115</b> repositories · <b>113</b> stars earned · Updated <code>2026-11-15 03:17 UTC</code></sub>
 <!-- AUTO-TECH-END -->
 
 </div>
