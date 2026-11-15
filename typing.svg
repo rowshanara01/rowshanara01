@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 56" width="850" height="56" role="img" aria-label="Hey there! I'm Rowshanara Akhter 👋">
+  <style>
+    .t { font: 700 24px ui-monospace, SFMono-Regular, "Fira Code", "JetBrains Mono", monospace; fill: #58a6ff; }
+  </style>
+  <g>
+    <text class="t" x="425" y="36" text-anchor="middle" opacity="1">Hey there! I'm Rowshanara Akhter 👋
+      <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;1" keyTimes="0;0.22;0.25;0.47;0.5;0.72;0.75;0.97;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text class="t" x="425" y="36" text-anchor="middle" opacity="0">Software Engineer
+      <animate attributeName="opacity" values="0;0;1;1;0;0;0;0;0" keyTimes="0;0.22;0.25;0.47;0.5;0.72;0.75;0.97;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text class="t" x="425" y="36" text-anchor="middle" opacity="0">Full Stack Engineer
+      <animate attributeName="opacity" values="0;0;0;0;1;1;0;0;0" keyTimes="0;0.22;0.25;0.47;0.5;0.72;0.75;0.97;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text class="t" x="425" y="36" text-anchor="middle" opacity="0">Open to Collaborate 🤝
+      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0" keyTimes="0;0.22;0.25;0.47;0.5;0.72;0.75;0.97;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 96" width="900" height="96" role="img" aria-label="Thanks for visiting!">
+  <defs>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#1F6FEB"/>
+    </linearGradient>
+  </defs>
+  <path d="M0,44 C180,92 360,4 540,48 C720,92 810,20 900,44 L900,96 L0,96 Z" fill="url(#waveGrad)"/>
+  <text x="450" y="72" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#ffffff">Thanks for visiting!</text>
+</svg>

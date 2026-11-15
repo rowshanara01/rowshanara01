@@ -1,0 +1,41 @@
+name: Auto Update Metrics & Tech Stack
+
+on:
+  schedule:
+    # Run automatically every 2 hours so new stars, commits & new tech always update!
+    - cron: '0 */2 * * *'
+  workflow_dispatch: # Allows manual 1-click update from GitHub Actions tab
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  update-metrics:
+    # Skip re-running on commits created by github-actions[bot]
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate Live Metrics SVGs & Auto-Sync Active Tech Stack
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: rowshanara01
+        run: node .github/scripts/update-profile-metrics.mjs
+
+      - name: Commit and Push Updated Stats, Streak, Languages, Chart & README
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.svg streak.svg top-langs.svg contribution-chart.svg README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update live stats, streak, languages & tech stack [skip ci]" && git push)

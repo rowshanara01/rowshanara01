@@ -3,8 +3,8 @@
   <img src="./fireworks.svg" alt="Celebration Fireworks — Welcome to My Profile" width="100%" />
   <br/><br/>
 
-  <!-- Dynamic Typing Header (Width 850 prevents text from getting cut off) -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=2800&pause=1200&color=58A6FF&center=true&vCenter=true&width=850&lines=Hey%20there!%20I'm%20Rowshanara%20Akhter%20%F0%9F%91%8B;Software%20Engineer;Full%20Stack%20Engineer;Open%20to%20Collaborate%20%F0%9F%A4%9D" alt="Typing SVG" />
+  <!-- Dynamic Typing Header (100% Uptime In-Repo SMIL SVG) -->
+  <img src="./typing.svg" alt="Hey there! I'm Rowshanara Akhter — Full-Stack Software Engineer" width="100%" />
   <br/><br/>
 
   <!-- Terminal Session Status -->
@@ -125,6 +125,37 @@ flowchart LR
 ![Stripe](https://img.shields.io/badge/-Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+<br/><br/>
+
+**Active Languages & Newly Detected Tech (Auto-Synced All Repositories)**<br/>
+<!-- AUTO-TECH-START -->
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
+![Laravel Blade](https://img.shields.io/badge/-Laravel%20Blade-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MDX](https://img.shields.io/badge/-MDX-1B1F24?style=flat-square&logo=mdx&logoColor=white)
+![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![Sass/SCSS](https://img.shields.io/badge/-Sass%2FSCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
+![Sass](https://img.shields.io/badge/-Sass-1f6feb?style=flat-square)
+![Shell](https://img.shields.io/badge/-Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![C++](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![CMake](https://img.shields.io/badge/-CMake-1f6feb?style=flat-square)
+![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Swift](https://img.shields.io/badge/-Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![TeX](https://img.shields.io/badge/-TeX-1f6feb?style=flat-square)
+![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+![PowerShell](https://img.shields.io/badge/-PowerShell-1f6feb?style=flat-square)
+![Batchfile](https://img.shields.io/badge/-Batchfile-1f6feb?style=flat-square)
+![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+<br/>
+<sub>⚡ Auto-synced across <b>124</b> repositories · <b>122</b> stars earned · Updated <code>2026-11-15 03:16 UTC</code></sub>
+<!-- AUTO-TECH-END -->
 
 </div>
 
@@ -248,18 +279,18 @@ flowchart LR
 </p>
 
 <div align="center">
-  <!-- 1 & 2: Side-by-side GitHub Stats and Contribution Streak (Live Real-Time Auto-Updating) -->
-  <img width="49%" src="https://github-readme-stats-fast.vercel.app/api?username=rowshanara01&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=8b949e" alt="GitHub stats"/>
-  <img width="49%" src="https://streak-stats.demolab.com?user=rowshanara01&hide_border=true&background=0d1117&stroke=21262d&ring=58a6ff&fire=e3b341&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" alt="contribution streak"/>
+  <!-- 1 & 2: Side-by-side GitHub Stats and Contribution Streak (100% Uptime In-Repo Auto-Updated SVGs) -->
+  <img width="49%" src="./stats.svg" alt="GitHub stats"/>
+  <img width="49%" src="./streak.svg" alt="contribution streak"/>
   <br/><br/>
-  <!-- 3: Most Used Languages (উপরে ২ টার নিচে ঠিক মাঝখানে) Live Auto-Updating -->
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=rowshanara01&layout=compact&langs_count=8&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" alt="most used languages"/>
+  <!-- 3: Most Used Languages (উপরে ২ টার নিচে ঠিক মাঝখানে) Auto-Updated via GraphQL up to 12 languages -->
+  <img src="./top-langs.svg" alt="most used languages"/>
 </div>
 
 ### `tail -f /var/log/commits`
 
 <div align="center">
-  <img src="https://ghchart.rshah.org/58a6ff/rowshanara01" width="100%" alt="Rowshanara Akhter's Github Contribution Chart"/>
+  <img src="./contribution-chart.svg" width="100%" alt="Rowshanara Akhter's Github Contribution Chart"/>
 </div>
 
 ### `tail -f /var/log/contributions/snake`
@@ -327,5 +358,5 @@ flowchart LR
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,100:1F6FEB&height=90&section=footer&text=Thanks+for+visiting!&fontSize=16&fontColor=ffffff&fontAlignY=65" />
+  <img src="./wave-footer.svg" width="100%" alt="Thanks for visiting!"/>
 </div>
