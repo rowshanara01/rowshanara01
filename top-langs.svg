@@ -8,7 +8,7 @@
   aria-labelledby="descId"
 >
   <title id="titleId">Most Used Languages</title>
-  <desc id="descId">TypeScript 30.66%, CSS 28.11%, JavaScript 22.84%, HTML 5.94%, Blade 3.66%, PHP 3.56%, Python 1.85%, Vue 1.62%, MDX 1.10%, Jupyter Notebook 0.44%, SCSS 0.14%, Shell 0.08%</desc>
+  <desc id="descId">TypeScript 30.66%, CSS 28.11%, JavaScript 22.86%, HTML 5.93%, Blade 3.66%, PHP 3.56%, Python 1.85%, Vue 1.62%, MDX 1.10%, Jupyter Notebook 0.44%, SCSS 0.14%, Shell 0.08%</desc>
   <style>
     .header {
       font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -40,10 +40,10 @@
       <mask id="rect-mask">
         <rect x="0" y="0" width="286" height="6" fill="white" rx="3"/>
       </mask>
-      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="0.00" y="0" width="87.69" height="6" fill="#3178c6" />
-      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="87.69" y="0" width="80.40" height="6" fill="#663399" />
-      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="168.09" y="0" width="65.33" height="6" fill="#f1e05a" />
-      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="233.42" y="0" width="16.97" height="6" fill="#e34c26" />
+      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="0.00" y="0" width="87.68" height="6" fill="#3178c6" />
+      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="87.68" y="0" width="80.39" height="6" fill="#663399" />
+      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="168.07" y="0" width="65.37" height="6" fill="#f1e05a" />
+      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="233.43" y="0" width="16.97" height="6" fill="#e34c26" />
       <rect mask="url(#rect-mask)" data-testid="lang-progress" x="250.40" y="0" width="10.47" height="6" fill="#f7523f" />
       <rect mask="url(#rect-mask)" data-testid="lang-progress" x="260.87" y="0" width="10.18" height="6" fill="#4F5D95" />
       <rect mask="url(#rect-mask)" data-testid="lang-progress" x="271.05" y="0" width="5.29" height="6" fill="#3572A5" />
@@ -69,13 +69,13 @@
         <g transform="translate(0, 32)">
           <g class="stagger" style="animation-delay: 690ms">
             <circle cx="4" cy="5" r="3.8" fill="#f1e05a" />
-            <text data-testid="lang-name" x="13" y="8.5" class="lang-name">JavaScript 22.84%</text>
+            <text data-testid="lang-name" x="13" y="8.5" class="lang-name">JavaScript 22.86%</text>
           </g>
         </g>
         <g transform="translate(0, 48)">
           <g class="stagger" style="animation-delay: 810ms">
             <circle cx="4" cy="5" r="3.8" fill="#e34c26" />
-            <text data-testid="lang-name" x="13" y="8.5" class="lang-name">HTML 5.94%</text>
+            <text data-testid="lang-name" x="13" y="8.5" class="lang-name">HTML 5.93%</text>
           </g>
         </g>
         <g transform="translate(0, 64)">
